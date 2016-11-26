@@ -3,7 +3,8 @@
 <html lang="en">
 	<head>
 		<title>JAH WEB TO DO App V1.0</title>
-		<link rel='stylesheet' type='text/css' href='content/todoapp-styles.css'>
+		<link rel='stylesheet' type='text/css' href='content/normalize.css'>
+		<link rel='stylesheet' type='text/css' href='content/styles.css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -14,14 +15,14 @@
 		<div id='display'>
 			<h1>To Do App</h1>
 			<div class='to-do-items' id='example-item'>
-				<input type='checkbox'>
-				<p>-EXAMPLE_ITEM1-</p>
+				<input type='checkbox' class='to-do-item-box'>
+				<p class='to-do-item-text' contenteditable='true'>-EXAMPLE_ITEM1-</p>
 			</div>
 		</div>
 		<div id='controls'>
-			<textarea id='input-text-box'></textarea>
+			<textarea id='input-text-box' placeholder='example item'></textarea>
+			<br>
 			<button type='button' class='control-button' id='complete-button'>Complete</button>
-			<button type='button' class='control-button' id='edit-button'>Edit</button>
 			<button type='button' class='control-button' id='trash-button'>Trash</button>
 			<button type='button' class='control-button' id='add-button'>Add</button>
 		</div>

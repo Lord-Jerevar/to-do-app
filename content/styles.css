@@ -1,0 +1,15 @@
+#to-do-wrapper {
+  width: 600px;
+  margin: 30px auto;
+  border: 1px solid black;
+  text-align: center;
+}
+.to-do-items p, .to-do-items input {
+  display: inline-block;
+}
+.control-button {
+  margin: 15px auto 15px auto;
+}
+#example-item {
+  display: none;
+}
